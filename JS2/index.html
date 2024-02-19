@@ -1,34 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>format text CSS</title>
-    <link rel="stylesheet" href="styleText.css" type="text/css" />
+    <title>Position CSS</title>
+    <link rel="stylesheet" type="text/css" href="stylePosition.css" />
   </head>
   <body>
-    <p class="tulisan_warna">Mengatur format text dengan CSS</p>
-    <p class="par1">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores mollitia
-      quos vitae odio suscipit in quisquam beatae facilis voluptatem nihil,
-      temporibus exercitationem omnis magni obcaecati vel. Hic, aspernatur
-      maxime? Neque magni iure pariatur voluptatum sunt beatae! Veritatis ut
-      fugiat iusto harum velit? Facilis aut iste adipisci voluptatum corporis
-      cumque sint voluptate? Explicabo corrupti aliquam cumque ducimus illo? Ab
-      voluptatibus similique quod recusandae rem quia reprehenderit, corrupti
-      molestiae quae fugiat natus illo. Earum, repellat. Itaque libero
-      temporibus veniam, blanditiis minima qui non ullam ipsam perferendis,
-      ratione, excepturi soluta molestiae ad officia fugit vitae? Excepturi
-      laudantium itaque aspernatur quae at nobis maxime. Lorem ipsum dolor sit
-      amet consectetur adipisicing elit. Vel sint quasi deleniti, sequi dolore
-      similique animi dolorum. Debitis magni eaque nesciunt consectetur sint
-      exercitationem mollitia velit alias illum ab, dolore inventore harum
-      expedita eum nobis, eos accusamus earum obcaecati placeat repellat! Vitae
-      eveniet maxime quis alias exercitationem eius odit voluptatem incidunt
-      veritatis sunt, iusto nemo molestiae, ab dolor, velit deleniti! Recusandae
-      modi dolorem inventore voluptatibus necessitatibus cumque a eos fugiat.
-      Officiis voluptates numquam blanditiis earum magni dolorum. Hic labore nam
-      perspiciatis, earum debitis autem cumque veniam accusamus ex sunt facilis
-      quisquam nobis iure nostrum quod dignissimos explicabo similique.
-      Reprehenderit, quas.
+    <h2>position: static</h2>
+
+    <p>
+      Position static digunakan untuk mengatur element menjadi statis secara
+      default. Elemen akan mengikuti posisi normal secara default, elemen tidak
+      dipengaruhi oleh properti seperti top, bottom, left dan right.
     </p>
+
+    <div class="static">Elemen ini diatur menggunakan posisi: static</div>
+    <br /><br /><br /><br />
+    <h2>position: relative;</h2>
+
+    <p>
+      Sebuah elemen HTML yang menggunakan position relative akan terletak pada
+      posisi normal, mengatur properti atas, kanan, bawah dan kiri dari elemen
+      yang diposisikan dengan "relatif" akan membuatnya jauh dari posisi
+      normalnya. Konten lain tidak akan disesuaikan agar sesuai dengan celah
+      yang ditinggalkan oleh elemen tersebut.:
+    </p>
+
+    <div class="relative">elemen ini diatur menggunakan posisi: relative;</div>
+    <br /><br /><br />
+    <h2>position: fixed</h2>
+
+    <p>
+      Sebuah elemen HTML yang disetting dengan position fixed akan memiliki
+      sifat tetap, tanpa ada perubahan bahkan jika halaman website di scroll.
+      Berlaku pengaturan left, bottom, top dan right pada position fixed:
+    </p>
+
+    <div class="fixed">Elemen ini diatur menggunakan posisi: fixed</div>
+    <br /><br /><br />
+    <br /><br /><br />
+    <br /><br /><br />
+    <br /><br /><br />
+    <br /><br /><br />
+
+    <h2>position: absolute;</h2>
+
+    <p>
+      Elemen HTML yang menggunakan position absolute akan diposisikan relatif
+      dengan elemen lain yang mendahuluinya yang terdekat, bukan relatif
+      terhadap layar secara normal.:
+    </p>
+
+    <div class="relative1">
+      Elemen ini diatur menggunakan posisi: relative;
+      <div class="absolute">
+        Elemen ini diatur menggunakan posisi: absolute;
+      </div>
+    </div>
+
+    <br /><br /><br />
+    <br /><br /><br />
+    <h2>position: sticky;</h2>
+    <p>
+      Cobalah untuk <b>scroll</b> untuk mengetahui bagaimana posisi sticky
+      bekerja.
+    </p>
+    <p>Catatan: IE/Edge 15 dan versi yang lebih lama tidak mendukung sticky</p>
+
+    <div class="sticky">Hola aku adalah sticky!</div>
+
+    <div style="padding-bottom: 2000px">
+      <p>
+        Dalam contoh ini, elemen sticky menempel pada posisi paling atas halaman
+        (top:0), ketika mencapai posisi scrollnya.
+      </p>
+      <p>cobalah untuk melakukan scroll.</p>
+      <p>
+        Cobalah untuk melakukan scroll.. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Maxime earum magnam deleniti nostrum cupiditate non,
+        aspernatur maiores, ullam necessitatibus laudantium commodi. Recusandae
+        et autem animi sapiente molestias nam vero quaerat labore suscipit
+        repudiandae non consequatur enim velit illo sequi doloribus architecto
+        dolorum dignissimos, tenetur qui quia natus quo! Corporis, ea!
+      </p>
+      <p>
+        Cobalah untuk melakukan scroll.. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Impedit voluptatibus labore molestias, perferendis
+        tenetur nostrum eaque maiores porro est possimus, quisquam tempora
+        eveniet hic ex vero saepe non. Eum voluptates placeat deserunt, culpa
+        quos fuga dolores neque, sapiente, vel error repudiandae excepturi?
+        Recusandae quis suscipit officiis ratione dignissimos voluptatem
+        aperiam.
+      </p>
+    </div>
   </body>
 </html>
