@@ -61,6 +61,6 @@ echo "<br><br>";
 $jumlahKursi = 45;
 $jumlahPelanggan = 28;
 $sisaKursiKosong = $jumlahKursi - $jumlahPelanggan;
-$persentase = $sisaKursiKosong / $jumlahPelanggan * 100;
+$persentase = ($sisaKursiKosong / $jumlahKursi) * 100;
 echo "Persentase kursi yang masih kosong adalah ". $persentase ."%";
 ?>
